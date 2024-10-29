@@ -1,0 +1,138 @@
+<!--
+==========================================================
+Project: QuizAnalyzer
+=====================================================
+Owner/Coder: Ayushman Tripathy
+Date: 27th September 2024
+==========================================================
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizAnylzR💡</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="favicon.io">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xjvE9M2jpbomUm3Xb8/1Zap5R/w0Mhlo2z+iP9ouJk00IVDtGgXq9fEW1+CGkIcS2BtARH4BxWsFCcIBdSf+kA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="2.png" alt="Logo"> </div>
+            <ul>
+                <li id="nav-btn"><a href="#">Home</a></li>
+                <li id="nav-btn"><a href="#">About</a></li>
+                <li id="nav-btn"><a href="#">Contact</a></li>
+            </ul>
+            <div class="btn">
+                <button class="Lang-btn" style="vertical-align:middle"><span>Language</span></button>
+                <button class="Help-btn" id="signin-btn"><a href="#help">Help/FAQ</a></button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="inst" id="help">
+        <h1 class="inst-head">🌟 Welcome to QuizAnylzR💭 🌟</h2>
+
+            <h2 class="inst-subhead">📝 Instructions:</h3>
+                <h2 class="rules">
+                    1. This quiz consists of 10 questions.<br>
+                    2. Answer each question one at a time.<br>
+                    3. You have a total time limit of 20 minutes to complete the quiz.<br>
+                    4. However, after the first 2 minutes, you can submit your answers.<br>
+                    5. All questions are mandatory and must be answered.<br>
+                    6. Once submitted, you cannot go back to previous questions.<br>
+                    7. Read each question carefully before selecting your answer.<br>
+                    8. Good luck and enjoy the quiz! <br>
+                    9.Enter your name and Age before starting the Quiz.
+
+
+                </h2>
+                <div class="form">
+                    <input placeholder="Enter ur Name..." class="input-name" name="text" type="text">
+
+                    <input placeholder="Enter ur Age..." class="input-age" name="text" type="text">
+                </div>
+
+                <button class="button" id="start-quiz" href="#quiz-container"
+                    onclick="alert('Welcome to QuizAnylzR💭')">Start Quiz :) </button>
+
+
+
+    </div>
+
+    </div>
+
+
+    <div id="quiz-container">
+        <img src="1.png" alt="Logo" id="logo">
+        <div id="question-container">
+            <h2 id="question">Question'll Go Here</h2>
+            <div class="option" data-index="0">Option 1</div>
+            <div class="option" data-index="1">Option 2</div>
+            <div class="option" data-index="2">Option 3</div>
+            <div class="option" data-index="3">Option 4</div>
+        </div>
+        <div id="navigation">
+            <button id="prev-btn">Prevs Que's</button>
+            <button id="next-btn">Nxt Que's</button>
+            <button id="submit-btn" style="display: none;">Submit</button>
+        </div>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <div class="result-circle">
+            <div id="result-info">
+                <h2>Result</h2>
+                </p>
+                <p>Score: <span id="user-score"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-section">
+                <h3>About AnylzR</h3>
+                <p>This Website is Designed to provide an Interactive Quiz Experience.
+				 Test Your Knowledge & Challenge Yourself with our Diverse Range of Quizee!</p>
+            </div>
+            <div class="creator-section">
+                <h3>About Me</h3>
+                <p><strong>Name:</strong> Ayushman Tripathy</p>
+                <p><strong>Role:</strong> Web Developer</p>
+                <p><strong>Date of Creation:</strong> 24/08/2024</p>
+            </div>
+            <div class="contact-section">
+                <h3>Contact</h3>
+                <p>Email: ayushmantripathy013@gmail.com</p>
+				<p>Instagram: <a href="http://www.instagram.com/regd.ayushman/">Ayushman Tripathy</a></p>
+                <p>LinkedIn: <a href="http://www.linkedin.com/in/ayushman-tripathy-7bb149295/">Ayushman Tripathy</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/ayushman.tripathy.013/">Ayushman Tripathy</a></p>
+                <p>Google Form: <a href="https://forms.gle/j6s1J7zMTfZF3RdM7">Help & Feedback</a></p>
+            </div>
+        </div>
+      
+        <div class="copyright">
+            <p>&copy; 2024 QuizAnylzR💡. All rights reserved. Thank You for using Your AnylzR Website!!</p>
+        </div>
+    </footer>
+    
+
+
+
+
+</body>
+
+</html>
